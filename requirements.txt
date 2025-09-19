@@ -1,0 +1,67 @@
+# Core dependencies
+yt-dlp==2023.12.30
+requests==2.31.0
+validators==0.22.0
+pathlib2==2.3.7
+
+# Audio/Video processing
+librosa==0.10.1
+numpy==1.24.3
+scipy==1.11.4
+ffmpeg-python==0.2.0
+opencv-python==4.8.1.78
+scenedetect[opencv]==0.6.2
+Pillow==10.1.0
+
+# Speech recognition
+openai-whisper==20231117
+torch==2.1.0
+torchvision==0.16.0
+torchaudio==2.1.0
+
+# Natural Language Processing
+transformers==4.35.2
+sentence-transformers==2.2.2
+nltk==3.8.1
+
+# Subtitle handling
+pysrt==1.1.2
+
+# RSS/Feed parsing
+feedparser==6.0.10
+beautifulsoup4==4.12.2
+
+# Platform APIs
+google-api-python-client==2.108.0
+facebook-sdk==3.1.0
+tweepy==4.14.0
+
+# Configuration and validation
+pydantic==2.5.0
+python-dotenv==1.0.0
+pyyaml==6.0.1
+
+# Security
+cryptography==41.0.7
+python-jose==3.3.0
+
+# Database and analytics
+pandas==2.1.3
+matplotlib==3.8.2
+
+# Task queue (optional)
+celery==5.3.4
+redis==5.0.1
+
+# Development dependencies
+pytest==7.4.3
+pytest-cov==4.1.0
+psutil==5.9.6
+black==23.11.0
+flake8==6.1.0
+mypy==1.7.1
+pre-commit==3.5.0
+
+# Logging and monitoring
+structlog==23.2.0
+prometheus-client==0.19.0
