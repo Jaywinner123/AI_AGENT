@@ -1,0 +1,102 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+clipper_env/
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# Security keys
+.clipper_key
+*.pem
+*.key
+
+# Storage and temporary files
+storage/
+temp/
+models/
+*.mp4
+*.mp3
+*.wav
+*.avi
+*.mov
+*.srt
+*.json
+*.jpg
+*.png
+*.jpeg
+
+# Logs
+*.log
+logs/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Documentation
+docs/_build/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Redis dump
+dump.rdb
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Docker
+.dockerignore
+Dockerfile
+docker-compose.yml

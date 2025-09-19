@@ -1,0 +1,86 @@
+clipper_agent:
+  # Processing settings
+  processing:
+    whisper_model_size: "base"
+    max_clip_duration: 60
+    min_clip_duration: 15
+    target_clips_per_video: 3
+    scene_detection_threshold: 30.0
+    audio_energy_threshold: 0.02
+    
+  # Content discovery
+  discovery:
+    engagement_keywords:
+      - "amazing"
+      - "incredible" 
+      - "wow"
+      - "unbelievable"
+      - "shocking"
+      - "insane"
+      - "crazy"
+      - "mind-blowing"
+      - "epic"
+      - "legendary"
+    
+    ranking_weights:
+      transcript_sentiment: 0.4
+      audio_energy: 0.3
+      scene_changes: 0.2
+      keyword_matches: 0.1
+  
+  # Video editing
+  editing:
+    output_format: "mp4"
+    video_codec: "libx264"
+    audio_codec: "aac"
+    target_resolution: "1080x1920"  # 9:16 aspect ratio
+    audio_normalization_lufs: -16
+    subtitle_style:
+      font_size: 24
+      font_color: "white"
+      outline_color: "black"
+      outline_width: 2
+  
+  # Platform settings
+  platforms:
+    youtube:
+      category_id: "22"  # People & Blogs
+      privacy_status: "public"
+      max_title_length: 100
+      max_description_length: 5000
+      
+    tiktok:
+      max_caption_length: 150
+      recommended_hashtags: 5
+      
+    instagram:
+      max_caption_length: 2200
+      recommended_hashtags: 10
+      
+    twitter:
+      max_caption_length: 280
+      recommended_hashtags: 3
+  
+  # Storage
+  storage:
+    local_path: "./storage"
+    temp_path: "./temp"
+    models_path: "./models"
+    cleanup_after_days: 7
+    max_storage_gb: 50
+  
+  # Security
+  security:
+    enable_copyright_check: true
+    safe_transform_only: true
+    api_key_encryption: true
+    rate_limiting:
+      youtube_api: 100  # requests per hour
+      openai_api: 60    # requests per hour
+  
+  # Monitoring
+  monitoring:
+    enable_metrics: true
+    metrics_port: 8000
+    health_check_interval: 300  # seconds
+    log_level: "INFO"
